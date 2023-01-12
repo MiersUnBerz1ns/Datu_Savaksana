@@ -19,3 +19,42 @@ for row in b:
 b[2][1]="jamacas"
 for row in b:
     print (*row, sep=', ')
+    
+    
+    ķip strādā lol
+    
+    import time
+print("Tic Tac Toe")
+laukums=[[]]
+laukums=[[0 for i in range(3)]for i in range(3)]
+for row in laukums:
+    print (*row, sep=', ')
+for i in range(3):
+    print("")
+    print("gâjiens" + str(i))
+    x = int(input("Izvelies kolonu"))
+    y = int(input("Izvelies rindu"))
+    laukums[x][y] = "x"
+    
+    for row in laukums:
+        print (*row, sep=', ')
+
+    print("gâjiens" + str(i))
+    x = int(input("Izvelies kolonu"))
+    y = int(input("Izvelies rindu"))
+    laukums[x][y] = "y"
+    
+    for row in laukums:
+        print (*row, sep=', ')
+
+
+MD
+davest desas līdz galam
+Atrast tieši micropython, jo to vajag pico W
+datu glabāšāna - [masīvs], datubāzes sql light, .csv
+.csv failā tictactoe pabeigt
+
++
+ atrast kā tiek rakstīts .csv failā, jauszaisa tā, lai ierakstās .csv failā
+ jānodod github saitu ar kodu, kas strādā thony, csv fails ar manu vārdu
+ 
