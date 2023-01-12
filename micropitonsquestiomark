@@ -10,6 +10,12 @@ for i in range(3):
     a[i]=1
     print(a)
     time.sleep(1)
-b=[]
-b=[0 for x in range(3)][3]
-print (b)
+b = [[]]
+b=[[0 for i in range(4)]for i in range(5)]
+print(b)
+for row in b:
+    print (*row, sep=', ')
+
+b[2][1]="jamacas"
+for row in b:
+    print (*row, sep=', ')
