@@ -58,3 +58,30 @@ datu glabāšāna - [masīvs], datubāzes sql light, .csv
  atrast kā tiek rakstīts .csv failā, jauszaisa tā, lai ierakstās .csv failā
  jānodod github saitu ar kodu, kas strādā thony, csv fails ar manu vārdu
  
+ #Izveido laukumu + speles nosaukumu
+import time
+print("Tic Tac Toe")
+print("")
+laukums=[[]]
+laukums=[["-" for i in range(3)]for i in range(3)]
+for row in laukums:
+    print (*row, sep=' | ')
+#Nosauc gajiena numuru + pirma speletaja izveli, kur izdarit gajienu
+for i in range(3):
+    print("")
+    print("Gajiens" + str(i))
+    x = int(input("Izvelies rindu"))
+    y = int(input("Izvelies kolonu"))
+    laukums[x][y] = "x"
+
+#Atkartojums nakamam speletajam
+    for row in laukums:
+        print (*row, sep=' | ')
+
+    print("Gajiens" + str(i))
+    x = int(input("Izvelies rindu"))
+    y = int(input("Izvelies kolonu"))
+    laukums[x][y] = "y"
+    
+    for row in laukums:
+        print (*row, sep=' | ')
