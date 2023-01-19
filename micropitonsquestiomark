@@ -85,3 +85,65 @@ for i in range(3):
     
     for row in laukums:
         print (*row, sep=' | ')
+        
+        
+        
+        
+        
+        
+        
+ #neiet       
+        import csv
+
+#Izveido laukumu + speles nosaukumu
+print("TiCs tAcS and BIG tOeS")
+print("")
+
+laukums=[[]]
+laukums=[["_" for i in range(3)]for i in range(3)]
+
+#Uztaisit csv
+try:
+    with open('laukums.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(laukums)
+except IOError:
+    print("Nesagaja sataisit laukums.csv.")
+    
+try:
+    with open('x_gajiens.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+except IOError:
+    print("Nesagaja sataisit x_gajiens.csv.")
+    
+try:
+    with open('y_moves.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+except IOError:
+    print("Nesagaja sataisit y_gajiens.csv.")
+    
+#teoretiski, jasanak ir speles laukumam 
+def print_laukums():
+  for row in laukums:
+    print(*row, sep=' | ')
+  with open('laukums.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(laukums)
+        
+#Nosauc gajiena numuru + pirma speletaja izveli, kur izdarit gajienu
+def speletajs_x_gajiens():
+    x = int(input("gEjMER x, izvēlies rindu 0, 1, 2: "))
+    x2 = int(input("gEjMER x, izvēlies kolonu 0, 1, 2: "))
+
+#Atkartojums nakamam speletajam
+    for row in laukums:
+        print (*row, sep=' | ')
+
+    def speletajs_y_gajiens():
+        y = int(input("GeJmer y, izvēlies rindu 0, 1, 2: "))
+        y2 = int(input("GeJmer y, izvēlies kolonu 0, 1, 2: "))
+    
+    for row in laukums:
+        print (*row, sep=' | ')
+
+
